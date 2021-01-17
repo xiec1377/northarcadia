@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Snake Academia</title>
+
+    <!-- Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body id="bulbgame-container">
+    <script src="script.js"></script> 
+
+    <!-- header -->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class = "display-4"> my snake academia </h1>
+      </div>
+      <hr>
+          <p class="instructions">It’s not actually a snake academy - just a classic snake game featuring everyone’s favourite heroes! Use the arrow keys to move and collect stars to grow your snake as long as you can. Make sure you don’t hit the walls or yourself, because that triggers an immediate GAME OVER, for you!</p>
+    </div>
+    </div>
+
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.js"></script>
+    <script src="snake.js"></script>
+
+    <!-- back button -->
+    <div class="returndiv bottom-buffer">
+      <button class="return" onclick="returnGallery()">back</button>
+    </div>
+
+    <!-- toggle dark mode switch-->
+    <div class="switchdiv">
+      <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class = "label" for="checkbox">     
+          on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+          <div class="ball"></div>
+        </label>
+      </div>
+      <p class="darkmode">dark mode</p>
+    </div>
+  </body>
+</html>

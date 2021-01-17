@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flappy Happy</title>
+
+    <!-- Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+    <script src="script.js"></script> 
+    <body id="bulbgame-container">
+    <!-- header -->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class = "display-4"> flappy happy </h1>
+      </div>
+      <hr>
+          <p class="instructions"> Remember when everyone was obsessed with Flappy Bird back in 2013? We’ve created our own version with a Fairy Tail twist! Guide Happy through the pipes by pressing the spacebar and avoid face planting into a pipe! </p>
+    </div>
+    </div>
+
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.js"></script>
+    <script src="bird.js"></script>
+
+    <!-- back button -->
+    <div class="returndiv bottom-buffer">
+      <button class="return" onclick="returnGallery()">back</button>
+    </div>
+
+
+    <!-- toggle dark mode switch-->
+    <div class="switchdiv">
+      <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class = "label" for="checkbox">     
+          on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+          <div class="ball"></div>
+        </label>
+      </div>
+      <p class="darkmode">dark mode</p>
+    </div>
+  </body>
+</html>

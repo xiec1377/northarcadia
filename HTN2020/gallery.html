@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games gallery</title>
+
+    <!-- Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class = "display-4"> games gallery </h1>
+      </div>
+      <hr>
+    </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 card-container top-buffer">
+          <!-- First game -->
+          <div class="card-flip">
+            <div class="front">
+              <!-- front content -->
+              <img class = "card-img-top" src="bulbasaur.png">
+              <div class = "card-body">
+                <h4 class = "card-title">bulbasaur adventure</h4>
+              </div>
+            </div>
+            
+            <a href="bulbasaur.html">
+              <div class="back">
+                  <!-- back content -->
+                  <h4>bulbasaur adventure</h4>
+                  <p>Bulbasaur Adventure is an fun and easy arcade game where you control the cute grass starter and avoid the crazy Gastlys! (we still love Gastly though) All you need to do is press ‘ENTER’ or the up arrow to jump. Hit enter to start and try to get the highest score!</p>
+              </div> 
+            </a>
+          </div>
+
+
+        </div>
+        <div class="col-md-6 card-container top-buffer">
+          <!-- Second game -->
+          <div class="card-flip">
+            <div class="front">
+              <!-- front content -->
+              <img class = "card-img-top" src="hapy.jpg">
+              <div class = "card-body">
+                <h4 class = "card-title">flappy happy</h4>
+              </div>
+            </div>
+            
+            <a href="flappyhappy.html">
+              <div class="back">
+                  <!-- back content -->
+                  <h4>flappy happy</h4>
+                  <p>Remember when everyone was obsessed with Flappy Bird back in 2013? We’ve created our own version with a Fairy Tail twist! Guide Happy through the pipes by pressing the spacebar and avoid face planting into a pipe! </p>
+              </div> 
+            </a>
+          </div>
+          
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-md-6 card-container top-buffer">
+          <!-- Third game -->
+          <div class="card-flip">
+            <div class="front">
+              <!-- front content -->
+              <img class = "card-img-top" src="haikyu.png">
+              <div class = "card-body">
+                <h4 class = "card-title">haikyuu pong</h4>
+              </div>
+            </div>
+            
+            <a href="haikyuupong.html">
+              <div class="back">
+                  <!-- back content -->
+                  <h4>haikyuu pong</h4>
+                  <p>For all the volleyball and Oikawa enthusiasts, Haikyuu is a pong style game where you try to volley the ball on your own as long as possible. Use the left and right arrow keys to control the paddles, which automatically switch based on the direction the ball is heading in. Make sure to keep up with the ball, or it’s game over for you! (Note: If you want to show the game over sign then lose on the left side)</p>
+              </div> 
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 card-container top-buffer">
+
+          <!-- Fourth game -->
+          <div class="card-flip">
+            <div class="front">
+              <!-- front content -->
+              <img class = "card-img-top" src="mhapic.png">
+              <div class = "card-body">
+                <h4 class = "card-title">my snake academia</h4>
+              </div>
+            </div>
+            
+            <a href="mysnakeacademia.html">
+              <div class="back">
+                  <!-- back content -->
+                  <h4>my snake academia</h4>
+                  <p>It’s not actually a snake academy - just a classic snake game featuring everyone’s favourite heroes! Use the arrow keys to move and collect stars to grow your snake as long as you can. Make sure you don’t hit the walls or yourself, because that triggers an immediate GAME OVER, for you!</p>
+              </div> 
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- toggle dark mode switch -->
+    <div class="switchdiv">
+      <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class = "label" for="checkbox">     
+          on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+          <div class="ball"></div>
+        </label>
+      </div>
+      <p class="darkmode">dark mode</p>
+    </div>
+
+    <script src="script.js"></script> 
+  </body>
+</html>

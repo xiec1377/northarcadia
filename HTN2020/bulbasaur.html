@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Bulbasaur Adventure</title>
+
+    <!-- library links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  </head>
+      <script src="script.js"></script> 
+      <body id="bulbgame-container">
+
+    <!-- header -->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class = "display-4"> bulbasaur adventure </h1>
+        <hr style="padding:none;">
+      </div>
+     <p class="instructions">Bulbasaur Adventure is an fun and easy arcade game where you control the cute grass starter and avoid the crazy Gastlys! (we still love Gastly though) All you need to do is press ‘ENTER’ or the up arrow to jump. Hit enter to start and try to get the highest score!</p>
+     </div>
+    </div>
+
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.js"></script>
+    <script src="bulbasaur.js"></script>
+
+    <!-- back button -->
+    <div class="returndiv bottom-buffer">
+      <button class="return" onclick="returnGallery()">back</button>
+    </div>
+
+    <!-- toggle dark mode switch-->
+    <div class="switchdiv">
+      <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class = "label" for="checkbox">     
+          on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+          <div class="ball"></div>
+        </label>
+      </div>
+      <p class="darkmode">dark mode</p>
+    </div>
+  </body>
+</html>

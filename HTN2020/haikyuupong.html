@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Haikyuu Pong</title>
+
+    <!-- Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body id="bulbgame-container">
+    <script src="script.js"></script> 
+
+    <!-- header -->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center ">
+      <div class="col-12">
+        <h1 class = "display-4"> haikyuu pong </h1>
+      </div>
+      <hr>
+      <p class="instructions">For all the volleyball and Oikawa enthusiasts, Haikyuu is a pong style game where you try to volley the ball on your own as long as possible. Use the left and right arrow keys to control the paddles, which automatically switch based on the direction the ball is heading in. Make sure to keep up with the ball, or it’s game over for you! (Note: If you want to show the game over sign then lose on the left side) </p>
+    </div>
+    </div>
+
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.js"></script>
+    <script src="pong.js"></script>
+    
+    <!-- back button -->
+    <div class="returndiv bottom-buffer">
+      <button class="return" onclick="returnGallery()">back</button>
+    </div>
+
+    <!-- toggle dark mode switch-->
+    <div class="switchdiv">
+      <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class = "label" for="checkbox">     
+          on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+          <div class="ball"></div>
+        </label>
+      </div>
+      <p class="darkmode">dark mode</p>
+    </div>
+  </body>
+</html>
